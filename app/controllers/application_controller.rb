@@ -8,14 +8,11 @@ class App < Sinatra::Base
       erb :super_hero
     end 
     
-    get '/teams' do 
-      
-    end 
     
     post '/teams' do 
       # binding.pry 
       
-      erb :team
+      erb :'app/views/team'
     end 
 
 end
