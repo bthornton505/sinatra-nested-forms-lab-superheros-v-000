@@ -12,7 +12,7 @@ class App < Sinatra::Base
     post '/teams' do 
       # binding.pry 
       
-      erb :'app/views/team'
+      erb :team
     end 
 
 end
