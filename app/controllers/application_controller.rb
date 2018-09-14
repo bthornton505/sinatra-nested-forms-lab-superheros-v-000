@@ -10,17 +10,17 @@ class App < Sinatra::Base
     
     
     post '/teams' do 
-      @team_name = params[:team][:name]
-      @team_motto = params{:team][:motto]
-      @hero_name = []
-      @hero_power = []
-      @hero_bio = []
-      @team_members = params[:team][:heros]
-      @team_members.each do |hero, attrib|
-        @hero_name << attrib[:name]
-        @hero_power << attrib[:power]
-        @hero_bio << attrib[:bio]
-      end 
+      # @team_name = params[:team][:name]
+      # @team_motto = params{:team][:motto]
+      # @hero_name = []
+      # @hero_power = []
+      # @hero_bio = []
+      # @team_members = params[:team][:heros]
+      # @team_members.each do |hero, attrib|
+      #   @hero_name << attrib[:name]
+      #   @hero_power << attrib[:power]
+      #   @hero_bio << attrib[:bio]
+      # end 
       
       erb :team
     end 
